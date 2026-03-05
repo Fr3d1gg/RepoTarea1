@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSelectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment 3: Elementos de selección"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción CheckBox"
+        app:layout_constraintTop_toBottomOf="@id/tvSelectionTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/checkBox1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio 1"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio 2"/>
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switchExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activar opción"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupExample"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/btnResumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver resumen"
+        app:layout_constraintTop_toBottomOf="@id/switchExample"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tvResumen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Resumen: (vacío)"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnResumen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
